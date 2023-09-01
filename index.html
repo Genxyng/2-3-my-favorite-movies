@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>My favorite movies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="my-title">
+        <h1>My favorite movies</h1>
+        <button type="button" class="btn btn-dark">Save a new movies</button>
+    </div>
+
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Enter Movie URL">
+            <label for="floatingInput">Movie URL</label>
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Stars</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>-- Select a rating --</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+        </div>
+
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+        </div>
+
+        <div class="mybtns">
+            <button type="button" class="btn btn-dark">Save</button>
+            <button type="button" class="btn btn-outline-dark">Close</button>
+        </div>
+    </div>
+
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="movie-title">Breaking Bad</h5>
+                        <h6 class="year">TV Series 2008–2013</h6>
+                        <p class="desc">"Breaking Bad" adalah serial televisi drama kriminal yang mengikuti
+                            perjalanan Walter White, seorang guru kimia yang terlibat dalam dunia produksi
+                            methamphetamine setelah didiagnosis menderita kanker paru-paru. Dengan bantuan mantan
+                            muridnya, Jesse Pinkman, Walter memasuki jalur kriminal yang berbahaya, menggali konflik
+                            moral dan eskalasi kejahatan yang dramatis. Serial ini meraih pujian karena pengembangan
+                            karakter yang mendalam, plot yang kompleks, dan konflik emosional yang menggugah.</p>
+                        <p class="card-rating">⭐⭐⭐</p>
+                        <p class="mycomment">This is a fake comment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="movie-title">Peaky Blinders</h5>
+                        <h6 class="year">TV Series 2013-2022</h6>
+                        <p class="desc">"Peaky Blinders" adalah serial drama kriminal yang mengambil setting di
+                            Birmingham, Inggris, setelah Perang Dunia I. Serial ini mengikuti keluarga Shelby yang
+                            memimpin geng kriminal bernama Peaky Blinders. Mereka terlibat dalam kegiatan ilegal seperti
+                            perjudian, pencurian, dan perdagangan alkohol selama masa larangan. Dengan gaya sinematik
+                            yang khas dan fokus pada karakter-karakter kuat, "Peaky Blinders" berhasil menciptakan
+                            suasana era pasca-perang yang gelap dan penuh ketegangan.</p>
+                        <p class="card-rating">⭐⭐⭐</p>
+                        <p class="mycomment">This is a fake comment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="movie-title">Game of Thrones</h5>
+                        <h6 class="year">TV Series 2011-2019</h6>
+                        <p class="desc">"Game of Thrones" adalah adaptasi epik dari seri novel "A Song of Ice and
+                            Fire" karya George R.R. Martin. Serial ini berlatar di benua fiksi Westeros dan Essos,
+                            mengikuti perjuangan berbagai keluarga bangsawan untuk merebut tahta Besi. Dengan intrik
+                            politik, perang, dan unsur fantasi seperti naga dan White Walkers, "Game of Thrones" dikenal
+                            karena kejutan plot yang tak terduga, karakter yang kompleks, serta produksi visual yang
+                            mengesankan.</p>
+                        <p class="card-rating">⭐⭐⭐</p>
+                        <p class="mycomment">This is a fake comment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="movie-title">The Godfather</h5>
+                        <h6 class="year">Movies 2013</h6>
+                        <p class="desc">"The Godfather" adalah film klasik yang menggambarkan dunia mafia
+                            Italia-Amerika. Film ini mengikuti keluarga Corleone yang terlibat dalam kegiatan kriminal
+                            seperti perjudian, perdagangan narkoba, dan pembunuhan. Namun, inti cerita adalah tentang
+                            Michael Corleone yang awalnya enggan terlibat dalam bisnis keluarga, namun akhirnya
+                            mengambil alih kepemimpinan setelah ayahnya ditembak. Dikenal karena akting luar biasa,
+                            sutradara Francis Ford Coppola berhasil mengeksplorasi tema kekuasaan, keluarga, dan
+                            pengorbanan dalam dunia gelap mafia.</p>
+                        <p class="card-rating">⭐⭐⭐</p>
+                        <p class="mycomment">This is a fake comment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
